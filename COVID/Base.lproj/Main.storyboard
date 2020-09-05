@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IPG-Zm-PG9">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Help-->
+        <scene sceneID="qgV-I6-Zac">
+            <objects>
+                <viewController id="zu7-s6-wsH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="chd-cr-HW6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Second Tab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEX-xp-Y8b">
+                                <rect key="frame" x="162" y="438" width="91" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Y1W-Wg-sZV"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Help" image="Help" landscapeImage="Help" id="7ss-M6-2NP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bY8-Kl-KGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197" y="36"/>
+        </scene>
+        <!--Me-->
+        <scene sceneID="jAF-Ra-IxO">
+            <objects>
+                <viewController id="MEv-q7-vLc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6J1-3Z-rKL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1ii-CN-Cvr"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Me" image="Me" landscapeImage="Me" id="Jn8-GF-a7s"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fwg-uI-snE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-202" y="711"/>
+        </scene>
+        <!--Cases-->
+        <scene sceneID="GRh-6s-oZP">
+            <objects>
+                <viewController id="jJP-Zk-jAR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0tb-Dg-TWn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Tab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4Z-7f-6ZP">
+                                <rect key="frame" x="174" y="438" width="66" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Luu-42-Bya"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cases" image="Covid" landscapeImage="Covid" id="cTQ-95-qxw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZgS-pP-4Wc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-198" y="-613"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="GC2-dQ-1gz">
+            <objects>
+                <tabBarController id="IPG-Zm-PG9" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GHf-Lp-gbh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jJP-Zk-jAR" kind="relationship" relationship="viewControllers" id="6Kv-wJ-ATe"/>
+                        <segue destination="zu7-s6-wsH" kind="relationship" relationship="viewControllers" id="trz-Pp-q7R"/>
+                        <segue destination="MEv-q7-vLc" kind="relationship" relationship="viewControllers" id="COT-V2-XtB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aik-cK-l2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1117" y="-289"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Covid" width="30" height="30"/>
+        <image name="Help" width="15" height="15"/>
+        <image name="Me" width="30" height="30"/>
+    </resources>
+</document>
