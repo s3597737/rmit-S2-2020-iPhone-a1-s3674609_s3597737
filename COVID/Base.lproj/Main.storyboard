@@ -33,7 +33,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bY8-Kl-KGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-197" y="36"/>
+            <point key="canvasLocation" x="-200" y="751"/>
         </scene>
         <!--Me-->
         <scene sceneID="jAF-Ra-IxO">
@@ -49,7 +49,52 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwg-uI-snE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-202" y="711"/>
+            <point key="canvasLocation" x="-199" y="1417"/>
+        </scene>
+        <!--Data-->
+        <scene sceneID="jVl-Pr-xKM">
+            <objects>
+                <tableViewController id="baF-wI-tE7" customClass="DataViewController" customModule="COVID" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Kay-jP-cwH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DataCell" textLabel="mMd-M9-NI3" detailTextLabel="062-3G-Eib" style="IBUITableViewCellStyleSubtitle" id="z7w-Gi-3KK">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z7w-Gi-3KK" id="kdy-bu-OvO">
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mMd-M9-NI3">
+                                            <rect key="frame" x="20" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="062-3G-Eib">
+                                            <rect key="frame" x="20" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="baF-wI-tE7" id="baR-vd-Ed4"/>
+                            <outlet property="delegate" destination="baF-wI-tE7" id="iMi-QK-Jif"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Data" id="lq0-ZU-SYD"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FPH-sy-FGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="68"/>
         </scene>
         <!--Cases-->
         <scene sceneID="GRh-6s-oZP">
@@ -87,6 +132,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="jJP-Zk-jAR" kind="relationship" relationship="viewControllers" id="6Kv-wJ-ATe"/>
+                        <segue destination="xzb-bG-sRF" kind="relationship" relationship="viewControllers" id="mmM-FP-cMr"/>
                         <segue destination="zu7-s6-wsH" kind="relationship" relationship="viewControllers" id="trz-Pp-q7R"/>
                         <segue destination="MEv-q7-vLc" kind="relationship" relationship="viewControllers" id="COT-V2-XtB"/>
                     </connections>
@@ -95,10 +141,30 @@
             </objects>
             <point key="canvasLocation" x="-1117" y="-289"/>
         </scene>
+        <!--Data-->
+        <scene sceneID="Jv3-hY-gUJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xzb-bG-sRF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Data" image="Data" landscapeImage="Data" id="a4m-vn-xDJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DfI-lh-izg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="baF-wI-tE7" kind="relationship" relationship="rootViewController" id="RGi-Cq-MVb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fWW-gn-Xqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-200" y="68"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Covid" width="30" height="30"/>
-        <image name="Help" width="15" height="15"/>
+        <image name="Data" width="30" height="30"/>
+        <image name="Help" width="30" height="30"/>
         <image name="Me" width="30" height="30"/>
     </resources>
 </document>
